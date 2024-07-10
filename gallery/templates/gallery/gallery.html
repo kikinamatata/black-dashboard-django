@@ -10,12 +10,14 @@
             margin: 0;
             padding: 0;
             height: 100vh;
+            background-color: #f0f0f0;
         }
         .gallery-list {
-            width: 30%;
-            background-color: #f0f0f0;
+            width: 50%;  /* Increased the width to give more space to the gallery */
+            background-color: #ffffff;
             padding: 10px;
             overflow-y: scroll;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
         }
         .gallery-list h2 {
             margin-top: 20px;
@@ -30,18 +32,25 @@
             height: 100px;
             object-fit: cover;
             cursor: pointer;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+        }
+        .gallery-list .images img:hover {
+            border-color: #333;
         }
         .full-view {
-            width: 70%;
+            width: 50%;  /* Adjusted to match the increased gallery width */
             background-color: #fff;
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 10px;
+            padding: 20px;
         }
         .full-view img {
             max-width: 100%;
             max-height: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
     </style>
     <script>

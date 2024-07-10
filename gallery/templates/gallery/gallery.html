@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+        .gallery-list {
+            width: 30%;
+            background-color: #f0f0f0;
+            padding: 10px;
+            overflow-y: scroll;
+        }
+        .gallery-list h2 {
+            margin-top: 20px;
+        }
+        .gallery-list .images {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .gallery-list .images img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+        .full-view {
+            width: 70%;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+        .full-view img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+    <script>
+        function showImage(url) {
+            document.getElementById('full-view-image').src = url;
+        }
+    </script>
+</head>
+<body>
+    <div class="gallery-list">
+        {% for category in images_data %}
+            <div class="category">
+                <h2>{{ category.category }}</h2>
+                <div class="images">
+                    {% for image in category.images %}
+                        <img src="{{ image.url }}" alt="Image" onclick="showImage('{{ image.url }}')">
+                    {% endfor %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    <div class="full-view">
+        <img id="full-view-image" src="/static/images/fantasy1.jpg" alt="Selected Image">
+    </div>
+</body>
+</html>

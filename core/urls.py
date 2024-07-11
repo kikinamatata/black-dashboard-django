@@ -11,6 +11,7 @@ urlpatterns = [
     path("", include("apps.authentication.urls")), # Auth routes - login / register
     # ADD NEW Routes HERE
     path("gallery/", include("gallery.urls")),
+    path('gradioapp/', include('gradioapp.urls')),
     # Leave `Home.Urls` as last the last line
     path("", include("apps.home.urls"))
 ]

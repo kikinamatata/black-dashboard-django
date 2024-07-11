@@ -38,5 +38,45 @@
          {"url" : "/static/styles/fantasy/dragon_girl_fast.png"},
          {"url" : "/static/styles/fantasy/dragon_man.png"}
       ]
+   },
+   { 
+      "category":"Fantasy",
+      "images":
+      [
+         {"url" : "/static/styles/fantasy/dragon_girl_fast.png"},
+         {"url" : "/static/styles/fantasy/dragon_man.png"},
+         {"url" : "/static/styles/fantasy/dragon_girl_fast.png"},
+         {"url" : "/static/styles/fantasy/dragon_man.png"}
+      ]      
+   },   
+   {
+      "category":"Futuristic",
+      "images":
+      [
+         {"url" : "/static/styles/futuristic/futuristic_kk.png"},
+         {"url" : "/static/styles/futuristic/futuristic_kk2.png"},
+         {"url" : "/static/styles/futuristic/futuristic_sk.png"},
+         {"url" : "/static/styles/futuristic/futuristic_sk2.png"}
+      ]  
+   },
+   {
+      "category":"Elegant",
+      "images":
+      [
+         {"url" : "/static/styles/fantasy/dragon_girl_fast.png"},
+         {"url" : "/static/styles/fantasy/dragon_man.png"},
+         {"url" : "/static/styles/fantasy/dragon_girl_fast.png"},
+         {"url" : "/static/styles/fantasy/dragon_man.png"}
+      ]
+   },
+   { 
+      "category":"Retro",
+      "images":
+      [
+         {"url" : "/static/styles/fantasy/dragon_girl_fast.png"},
+         {"url" : "/static/styles/fantasy/dragon_man.png"},
+         {"url" : "/static/styles/fantasy/dragon_girl_fast.png"},
+         {"url" : "/static/styles/fantasy/dragon_man.png"}
+      ]
    }
 ]

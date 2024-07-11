@@ -8,3 +8,12 @@ def gallery_view(request):
     with open(json_path, 'r') as f:
         images_data = json.load(f)
     return render(request, 'gallery/gallery.html', {'images_data': images_data})
+
+def upload_image(request):
+    if request.method == 'POST' and request.FILES['image']:
+        image = request.FILES['image']
+        fs = FileSystemStorage()
+        filename = fs.save(image.name, image)
+        uploaded_file_url = fs.url(filename)
+        return redirect('gallery')  # Redirect to the gallery view after upload
+    return render(request, 'gallery/upload.html')
